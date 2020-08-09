@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">착한마스크</string>
+    <string name="prompt_title">약국이름</string>
+    <string name="prompt_address">약국주소</string>
+    <string name="prompt_convert">좌표변환</string>
+    <string name="prompt_latitude">위도</string>
+    <string name="prompt_longitude">경도</string>
+    <string name="prompt_tel">전화번호</string>
+    <string name="prompt_descr">약국설명</string>
+    <string name="prompt_time">영업시간</string>
+    <string name="prompt_program">방송프로그램</string>
+    <string name="prompt_date">방송일자</string>
+    <string name="prompt_save">저장</string>
+    <string name="prompt_close">닫기</string>
+    <string name="prompt_star">별점</string>
+    <string name="prompt_post">평가남기기</string>
+    <string name="prompt_user_code">사용자ID</string>
+    <string name="prompt_user_pwd">Password</string>
+    <string name="prompt_conf_pwd">Confirm Password</string>
+    <string name="prompt_user_name">사용자이름</string>
+    <string name="prompt_login">로그인</string>
+    <string name="prompt_register">사용자등록</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

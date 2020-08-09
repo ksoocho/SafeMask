@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="auto"
+    android:focusableInTouchMode="true"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/textViewDetailTitle"
+        android:layout_width="183dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="약국명"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="7dp" />
+
+    <TextView
+        android:id="@+id/textViewDetailAddr"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="주소"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetailTitle" />
+
+    <TextView
+        android:id="@+id/textViewDetailTel"
+        android:layout_width="269dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="전화번호"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetailAddr" />
+
+    <EditText
+        android:id="@+id/editTextDetailDescr"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/prompt_descr"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetailTel" />
+
+    <EditText
+        android:id="@+id/editTextDetailTime"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:editable="false"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="@string/prompt_time"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailDescr" />
+
+    <TextView
+        android:id="@+id/textViewDetailProgram"
+        android:layout_width="141dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="방송사"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailTime" />
+
+    <TextView
+        android:id="@+id/textViewDetailProgDate"
+        android:layout_width="89dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="방영일자"
+        app:layout_constraintStart_toEndOf="@+id/textViewDetailProgram"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailTime" />
+
+    <Button
+        android:id="@+id/buttonDetailClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/prompt_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextDetailTime"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDetailDescr" />
+
+    <EditText
+        android:id="@+id/editTextStarPost"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/prompt_post"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDetailProgDate" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupStar"
+        android:layout_width="240dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStarPost">
+
+        <RadioButton
+            android:id="@+id/radioButtonStar5"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="5" />
+
+        <RadioButton
+            android:id="@+id/radioButtonStar4"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="4" />
+
+        <RadioButton
+            android:id="@+id/radioButtonStar3"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="3" />
+
+        <RadioButton
+            android:id="@+id/radioButtonStar2"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="2" />
+
+        <RadioButton
+            android:id="@+id/radioButtonStar1"
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:text="1" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewDetailMsg"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listViewStarList" />
+
+    <Button
+        android:id="@+id/buttonDetailStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="@string/prompt_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/radioGroupStar"
+        app:layout_constraintTop_toBottomOf="@+id/editTextStarPost" />
+
+    <ListView
+        android:id="@+id/listViewStarList"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:scrollbars="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCount5" />
+
+    <TextView
+        android:id="@+id/textViewCount5"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupStar" />
+
+    <TextView
+        android:id="@+id/textViewCount4"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCount5"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupStar" />
+
+    <TextView
+        android:id="@+id/textViewCount3"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCount4"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupStar" />
+
+    <TextView
+        android:id="@+id/textViewCount2"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCount3"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupStar" />
+
+    <TextView
+        android:id="@+id/textViewCount1"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/textViewCount2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupStar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
